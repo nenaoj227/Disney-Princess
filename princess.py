@@ -1,18 +1,21 @@
 import time
 import sys
-x = input("Hello, would you like to play a game to find out which Disney Princess you are? ")
-if ( x == "yes" or x == "Yes" ):
-        gender= input("Are you a boy or a girl? ")
-        if (gender == "Boy" or gender == "boy"):
-                print("Too bad! You're still a princess.")
-        elif (gender == "girl" or gender == "Girl"):
-                print ("Well, let's figure out which Princess you are!")
-        else :
-                print("Welp! Then you're a " + gender + " princess!")
-elif ( x == "no" or x == "No"):
-        sys.exit("Too Bad!")
-else: 
-        print ("Please say yes or no.")
+def game():
+        x = input("Hello, would you like to play a game to find out which Disney Princess you are? ")
+        if ( x == "yes" or x == "Yes" ):
+                gender= input("Are you a boy or a girl? ")
+                if (gender == "Boy" or gender == "boy"):
+                        print("Too bad! You're still a princess.")
+                elif (gender == "girl" or gender == "Girl"):
+                        print ("Well, let's figure out which Princess you are!")
+                else :
+                        print("Welp! Then you're a " + gender + " princess!")
+        elif ( x == "no" or x == "No"):
+                sys.exit("Too Bad!")
+        else: 
+                print ('Please say "yes" or "no".')
+                game()
+game()
 def seas():
         season = input("What season do you prefer!? Winter or Summer? : ")
         if (season == "Winter" or season == "winter"):
@@ -26,7 +29,7 @@ def seas():
                                         elif (worker == "No" or worker == "no"):
                                                 print ("You are Princess Aurora. You are a couch potato who enjoys napping on their free time.")
                                         else:
-                                                print ("Yo, STOP PLAYING AND PICK YES OR NO!")
+                                                print ('Yo, STOP PLAYING AND PICK "YES" OR "NO"!')
                                                 work()
                                 work()
                         elif (boujee == "No" or "no"):
@@ -37,11 +40,11 @@ def seas():
                                         elif (siblings == "No" or siblings == "no"):
                                                 print ("You are Fa Mulan. You are an only child who works hard to make thier parents proud.")
                                         else: 
-                                                print ("PLEASE PICK YES OR NO!")
+                                                print ('PLEASE PICK "YES" OR "NO"!')
                                                 sibs()
                                 sibs()
                         else: 
-                                print ("Stop playing, please enter yes or no. ")
+                                print ('Stop playing, please enter "yes" or "no". ')
                                 bouj()
                 bouj()
         elif (season == "Summer" or season == "summer"):
@@ -55,7 +58,7 @@ def seas():
                                         elif (culture == "No" or culture == "no"):
                                                 print ("You are definitely Rapunzal! Quite adventurous and free to be just like summer! ")
                                         else: 
-                                                print("Please type either Yes or No: ")
+                                                print('Please type either "Yes" or "No": ')
                                                 cult()
                                 cult()
                         elif (adventure == "No" or adventure == "no"):
@@ -70,7 +73,7 @@ def seas():
                                                 BM()
                                 BM()
                         else:
-                                print("Please type Yes or No! ")
+                                print('Please type "Yes" or "No"! ')
                                 adven()
                 adven()
         else:
