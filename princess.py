@@ -3,7 +3,7 @@ import sys
 def game():
         x = input("Hello, would you like to play a game to find out which Disney Princess you are? ")
         if ( x == "yes" or x == "Yes" ):
-                gender= input("Are you a boy or a girl? ")
+                gender= input("What type of princess are you? Boy? Girl? Alligator? :  ")
                 if (gender == "Boy" or gender == "boy"):
                         print("Too bad! You're still a princess.")
                 elif (gender == "girl" or gender == "Girl"):
